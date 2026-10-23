@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SUJAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+<header class="header">
+    <a class="logo" href="index.html">SUJAN<span> Admin Panel</span></a>
+    <div class="admin-actions">
+        <span id="adminWelcome">Administrator</span>
+        <button class="btn btn-small" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<main class="dashboard">
+    <div class="dashboard-heading">
+        <div>
+            <span class="eyebrow">CONTROL CENTER</span>
+            <h1>Admin Dashboard</h1>
+            <p class="muted">Overview of demo website activity.</p>
+        </div>
+        <a href="index.html" class="back-link">View Website ↗</a>
+    </div>
+
+    <div class="dashboard-stats">
+        <article class="stat-card">
+            <span>Total Users</span>
+            <strong id="totalUsers">0</strong>
+        </article>
+        <article class="stat-card">
+            <span>Total Enquiries</span>
+            <strong id="totalEnquiries">0</strong>
+        </article>
+        <article class="stat-card">
+            <span>Account Type</span>
+            <strong class="role-text">Admin</strong>
+        </article>
+    </div>
+
+    <section class="dashboard-panel">
+        <div class="panel-heading">
+            <h2>Registered Demo Users</h2>
+        </div>
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr><th>Name</th><th>Email</th><th>Action</th></tr>
+                </thead>
+                <tbody id="usersTable"></tbody>
+            </table>
+        </div>
+        <p id="usersEmpty" class="muted">No registered demo users yet.</p>
+    </section>
+
+    <section class="dashboard-panel">
+        <div class="panel-heading">
+            <h2>Contact Enquiries</h2>
+        </div>
+        <div id="enquiriesList" class="enquiries-list"></div>
+        <p id="enquiriesEmpty" class="muted">No enquiries yet.</p>
+    </section>
+
+    <p class="demo-warning">
+        Demo only: browser storage is not a secure database. Do not use this
+        dashboard to manage real customer accounts or confidential data.
+    </p>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

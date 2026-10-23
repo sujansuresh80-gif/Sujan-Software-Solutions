@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | SUJAN Software Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <a class="logo" href="index.html">SUJAN<span> Software Solutions</span></a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="courses.html">Courses</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery & Map</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a class="nav-button" href="signup.html">Sign Up</a>
+    </nav>
+</header>
+
+<main class="page-main">
+    <div class="course-tools">
+        <input
+            type="text"
+            id="courseSearch"
+            placeholder="Search courses..."
+        >
+        <select id="courseCategory">
+            <option value="all">All Courses</option>
+            <option value="development">Web Development</option>
+            <option value="programming">Programming</option>
+            <option value="data">Data & AI</option>
+            <option value="testing">Testing</option>
+            <option value="cloud">Cloud & DevOps</option>
+            <option value="design">Design & Security</option>
+        </select>
+    </div>
+
+    <p id="courseCount">Showing all courses</p>
+
+    <section class="page-banner">
+        <span class="eyebrow">LEARN AND GROW</span>
+        <h1>Explore Our Courses</h1>
+        <p>Build your skills with practical technology learning.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <h2>Our IT Courses</h2>
+            <p>Explore our technology course categories.</p>
+        </div>
+
+        <div class="cards">
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-python"></i></div>
+                <h3>1. Python Full Stack</h3>
+                <p>Python, Django, HTML, CSS, JavaScript and databases.</p>
+                <a href="contact.html?course=Python%20Full%20Stack">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-java"></i></div>
+                <h3>2. Java Full Stack</h3>
+                <p>Java, Spring Boot, frontend and database integration.</p>
+                <a href="contact.html?course=Java%20Full%20Stack">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-react"></i></div>
+                <h3>3. MERN Stack</h3>
+                <p>MongoDB, Express, React and Node.js fundamentals.</p>
+                <a href="contact.html?course=MERN%20Stack">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-angular"></i></div>
+                <h3>4. MEAN Stack</h3>
+                <p>MongoDB, Express, Angular and Node.js.</p>
+                <a href="contact.html?course=MEAN%20Stack">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>5. Web Development</h3>
+                <p>Create modern, responsive and interactive websites.</p>
+                <a href="contact.html?course=Web%20Development">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>6. Frontend Development</h3>
+                <p>HTML, CSS, JavaScript and frontend fundamentals.</p>
+                <a href="contact.html?course=Frontend%20Development">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                <h3>7. Backend Development</h3>
+                <p>Server-side logic, APIs and database connections.</p>
+                <a href="contact.html?course=Backend%20Development">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-brands fa-html5"></i></div>
+                <h3>8. HTML & CSS</h3>
+                <p>Build and style web pages with responsive layouts.</p>
+                <a href="contact.html?course=HTML%20and%20CSS">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-brands fa-js"></i></div>
+                <h3>9. JavaScript</h3>
+                <p>Learn events, functions, DOM and interactive features.</p>
+                <a href="contact.html?course=JavaScript">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-react"></i></div>
+                <h3>10. React.js</h3>
+                <p>Create reusable components and dynamic interfaces.</p>
+                <a href="contact.html?course=React.js">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-angular"></i></div>
+                <h3>11. Angular</h3>
+                <p>Develop structured web applications with Angular.</p>
+                <a href="contact.html?course=Angular">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="development">
+                <div class="service-icon"><i class="fa-brands fa-node-js"></i></div>
+                <h3>12. Node.js</h3>
+                <p>Learn JavaScript-based server-side development.</p>
+                <a href="contact.html?course=Node.js">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-brands fa-java"></i></div>
+                <h3>13. Java Programming</h3>
+                <p>Learn classes, objects and object-oriented programming.</p>
+                <a href="contact.html?course=Java%20Programming">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-brands fa-python"></i></div>
+                <h3>14. Python Programming</h3>
+                <p>Practise variables, conditions, loops and functions.</p>
+                <a href="contact.html?course=Python%20Programming">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
+                <h3>15. C Programming</h3>
+                <p>Understand programming logic, arrays and functions.</p>
+                <a href="contact.html?course=C%20Programming">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>16. C++ Programming</h3>
+                <p>Learn classes, objects and C++ programming concepts.</p>
+                <a href="contact.html?course=C%2B%2B%20Programming">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>17. C# Programming</h3>
+                <p>Explore C# syntax and application development basics.</p>
+                <a href="contact.html?course=C%23%20Programming">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                <h3>18. SQL Programming</h3>
+                <p>Write queries to retrieve and manage database records.</p>
+                <a href="contact.html?course=SQL%20Programming">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-solid fa-table"></i></div>
+                <h3>19. MySQL</h3>
+                <p>Learn tables, relationships, joins and database queries.</p>
+                <a href="contact.html?course=MySQL">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="programming">
+                <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+                <h3>20. MongoDB</h3>
+                <p>Understand documents and NoSQL database concepts.</p>
+                <a href="contact.html?course=MongoDB">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="data">
+                <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+                <h3>21. Data Analytics</h3>
+                <p>Explore data analysis, reporting and visualization.</p>
+                <a href="contact.html?course=Data%20Analytics">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="data">
+                <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>22. Data Science</h3>
+                <p>Learn data preparation, statistics and data exploration.</p>
+                <a href="contact.html?course=Data%20Science">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="data">
+                <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>23. Artificial Intelligence</h3>
+                <p>Explore AI concepts and real-world applications.</p>
+                <a href="contact.html?course=Artificial%20Intelligence">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="data">
+                <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                <h3>24. Machine Learning</h3>
+                <p>Understand introductory algorithms and predictive models.</p>
+                <a href="contact.html?course=Machine%20Learning">Enquire Now →</a>
+            </article>
+
+           <article class="service-card" data-category="testing">
+                <div class="service-icon"><i class="fa-solid fa-bug"></i></div>
+                <h3>25. Software Testing</h3>
+                <p>Learn test cases, bug reports and testing techniques.</p>
+                <a href="contact.html?course=Software%20Testing">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="testing">
+                <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3>26. Automation Testing</h3>
+                <p>Explore test automation and Selenium fundamentals.</p>
+                <a href="contact.html?course=Automation%20Testing">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="cloud">
+                <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+                <h3>27. Cloud Computing</h3>
+                <p>Understand cloud services and deployment fundamentals.</p>
+                <a href="contact.html?course=Cloud%20Computing">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="cloud">
+                <div class="service-icon"><i class="fa-solid fa-infinity"></i></div>
+                <h3>28. DevOps</h3>
+                <p>Explore Git, automation, CI/CD and deployment concepts.</p>
+                <a href="contact.html?course=DevOps">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="design">
+                <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3>29. UI/UX Design</h3>
+                <p>Design accessible, attractive and user-friendly interfaces.</p>
+                <a href="contact.html?course=UI%2FUX%20Design">Enquire Now →</a>
+            </article>
+
+            <article class="service-card" data-category="design">
+                <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>30. Cybersecurity Fundamentals</h3>
+                <p>Learn security basics, online safety and threat awareness.</p>
+                <a href="contact.html?course=Cybersecurity%20Fundamentals">Enquire Now →</a>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 SUJAN Software Solutions. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

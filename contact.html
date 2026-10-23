@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SUJAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a class="logo" href="index.html">SUJAN<span> Software Solutions</span></a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a class="nav-button" href="signup.html">Sign Up</a>
+        <a href="courses.html">Courses</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery & Map</a>
+    </nav>
+</header>
+
+<main class="page-main">
+    <section class="page-banner">
+        <span class="eyebrow">LET'S CONNECT</span>
+        <h1>Contact Us</h1>
+        <p>Share your project idea or send us an enquiry.</p>
+    </section>
+
+    <section class="section contact-layout">
+        <div class="contact-info">
+            <h2>Let's talk about your project.</h2>
+            <p>Complete the form and submit your enquiry.</p>
+            <div class="info-card">
+                <strong>Company</strong>
+                <p>SUJAN Software Solutions</p>
+            </div>
+            <div class="info-card">
+                <strong>Email</strong>
+                <p>sujansoftware@gmail.com</p>
+                <p>+91-9540872764</p>
+                <p>+91-6984598475</p>
+            </div>
+            <div class="info-card">
+                <strong>Location</strong>
+                <p>Vasan Nagar, Tamil Nadu 620102</p>
+            </div>
+        </div>
+
+        <form id="contactForm" class="form-card">
+            <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="contactCourse">Choose a Course</label>
+                <select id="contactCourse" name="course" required>
+                    <option value="">Select your course</option>
+                    <option>Python Full Stack</option>
+                    <option>Java Full Stack</option>
+                    <option>MERN Stack</option>
+                    <option>MEAN Stack</option>
+                    <option>Web Development</option>
+                    <option>Frontend Development</option>
+                    <option>Backend Development</option>
+                    <option>HTML &amp; CSS</option>
+                    <option>JavaScript</option>
+                    <option>React.js</option>
+                    <option>Angular</option>
+                    <option>Node.js</option>
+                    <option>Java Programming</option>
+                    <option>Python Programming</option>
+                    <option>C Programming</option>
+                    <option>C++ Programming</option>
+                    <option>C# Programming</option>
+                    <option>SQL Programming</option>
+                    <option>MySQL</option>
+                    <option>MongoDB</option>
+                    <option>Data Analytics</option>
+                    <option>Data Science</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Machine Learning</option>
+                    <option>Software Testing</option>
+                    <option>Automation Testing</option>
+                    <option>Cloud Computing</option>
+                    <option>DevOps</option>
+                    <option>UI/UX Design</option>
+                    <option>Cybersecurity Fundamentals</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Python Development">Python Development</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Database Solutions">Database Solutions</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Technical Support">Technical Support</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contactMode">Preferred Learning Mode</label>
+                <select id="contactMode" name="mode" required>
+                    <option value="">Select learning mode</option>
+                    <option value="Classroom">Classroom / Offline</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+
+            
+<div class="form-group">
+    <label for="contactName">Full Name</label>
+    <input id="contactName" name="name" type="text"
+           placeholder="Enter your name"
+           required maxlength="100">
+</div>
+
+<div class="form-group">
+    <label for="contactEmail">Email Address</label>
+    <input id="contactEmail" name="email" type="email"
+           placeholder="Enter your email"
+           required maxlength="150">
+</div>
+
+<div class="form-group">
+    <label for="contactSubject">Subject</label>
+    <input id="contactSubject" name="subject" type="text"
+           placeholder="Course Enquiry"
+           required maxlength="150">
+</div>
+
+<div class="form-group">
+    <label for="contactMessage">Message</label>
+    <textarea id="contactMessage" name="message"
+              placeholder="Tell us about your learning goals"
+              required maxlength="2000"></textarea>
+</div>
+
+            
+            <button class="btn" type="submit">Send Enquiry →</button>
+            <p id="contactStatus" class="status" role="status"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 SUJAN Software Solutions. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
